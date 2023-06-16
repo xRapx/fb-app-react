@@ -1,0 +1,29 @@
+************************ SET UP PROJECT ************************
+
+1 . GIT:
+    - Create new Reponstory
+    - git clone "my-Reponstory" (clone Res on Github to PC)
+    - npx create-react-app my-app (install Reactjs)
+    - git add -A (save all file)
+    - git commit -m "note something"
+    - git push (push new file to Github)
+
+2 . Reactjs:
+        - Setup directory structure on "src" with new folder /assets/components/context/pages/store/service.....
+        - Setup react-app-rewire-alias Scrope with Babel ~/src
+          + npm install customize-cra react-app-rewired -D
+          + npm install --save-dev babel-plugin-module-resolver
+          + create file ".babelrc" : {"plugins": [["module-resolver", {"alias": {"~": "./src"}}]]}
+          + create file "jsconfig.json" : {"compilerOptions": {"baseUrl": ".","paths": {"~/*": ["src/*"]}}}
+          + create file "config-overrides.js : const { override, useBabelRc } = require("customize-cra");module.exports = override(useBabelRc());"
+   + SCSS:
+        - npm i scss (library CSS)
+        - Use Grid CSS build Layout with Flex-box or Grid
+        - Use responsive configuration for all devices
+   + Components
+        - Use JSX
+   + API    
+        - npm i json-server : add "server": "json-server --watch ./src/database/database.json" on package.json
+        - npm run server
+        - proxy server
+        - Axios , Asyns await , Fectch

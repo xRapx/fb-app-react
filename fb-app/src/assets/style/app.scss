@@ -1,0 +1,25 @@
+@use "./responsive.scss";
+@use "./header.scss";
+// @use "./section.scss";
+
+* {
+  margin: 2 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+main {
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+.non-padding {
+  padding: 0;
+}
+.xe3v8dz {
+  background-color: #fff;
+  color: #fff;
+}

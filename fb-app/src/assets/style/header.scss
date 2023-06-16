@@ -1,0 +1,124 @@
+header {
+  height: 60px;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+  margin: 0;
+}
+.nav-left {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  margin: 0;
+  & > .item-1 {
+    width: 30%;
+  }
+  & > .item-2 {
+    width: 100%;
+    padding-right: 60px;
+    padding-top: 6px;
+    margin-right: 5px;
+    & > input {
+      background-color: #3a3b3c;
+      margin: 0;
+      width: 120%;
+      height: 30px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+  }
+}
+.nav-center {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  height: 100%;
+  & > li {
+    padding-top: 5px;
+    width: 100%;
+    & > a {
+      width: 100%;
+    }
+  }
+  & > li:hover {
+    background-color: rgb(71, 67, 67);
+  }
+}
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  margin: 0;
+
+  & > .item-7,
+  > .item-8,
+  > .item-9 {
+    & > .frag {
+      border: 1px solid;
+      width: 35px;
+      height: 35px;
+      padding-top: 7px;
+      border-radius: 25px;
+      margin-right: 18px;
+    }
+    & > .frag:hover {
+      background-color: rgb(95, 93, 93);
+    }
+  }
+}
+.side-1 {
+  height: 100vh;
+  display: block;
+  text-align: left;
+  padding-left: 20px;
+  & > li {
+    padding-bottom: 10px;
+  }
+}
+.side-2 {
+  display: grid;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+  & > h1 {
+    border: 1px solid;
+    border-radius: 25px;
+    height: 200px;
+    background-color: orange;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+}
+.side-3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  overflow: hidden;
+  & > .padding-top {
+    margin: 0;
+    padding-top: 20px;
+  }
+  & > .banner1 {
+    display: flex;
+    flex-wrap: wrap;
+    & > ul {
+      & > li {
+        & > img {
+          width: 100px;
+        }
+      }
+    }
+  }
+  & > h1 {
+    border: 1px solid;
+    height: 100px;
+    background-color: wheat;
+    margin: 0;
+    margin-top: 20px;
+  }
+}
